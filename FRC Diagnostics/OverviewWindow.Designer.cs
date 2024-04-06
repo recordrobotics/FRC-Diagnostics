@@ -1,4 +1,4 @@
-﻿namespace FRC_Diagnostics
+﻿namespace FRCDiagnostics
 {
     partial class OverviewWindow
     {
@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            SuspendLayout();
+            // 
+            // OverviewWindow
+            // 
+            AutoScaleDimensions = new SizeF(120F, 120F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            ClientSize = new Size(734, 402);
+            Name = "OverviewWindow";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FRC Diagnostics - Overview";
+            ResumeLayout(false);
         }
 
         #endregion

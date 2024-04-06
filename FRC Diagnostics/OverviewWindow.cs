@@ -1,8 +1,10 @@
-namespace FRC_Diagnostics
+using FRCDiagnostics.UI;
+
+namespace FRCDiagnostics
 {
-    public partial class OverviewWindow : Form
+    public partial class OverviewWindow : UIForm
     {
-        public OverviewWindow()
+        public OverviewWindow() : base(ThemeManager.Global!)
         {
             InitializeComponent();
         }
