@@ -12,11 +12,19 @@ namespace FRCDiagnostics.UI
         UIColor BackgroundTertiary { get; }
         UIColor BackgroundPopup { get; }
         UIColor BackgroundSecondary { get; }
+
         UIColor BorderDefault { get; }
         UIColor BorderSecondary { get; }
+
         UIColor TextNormal { get; }
         UIColor TextMuted { get; }
+
         UIColor HeaderNormal { get; }
         UIColor HeaderMuted { get; }
+
+        UIColor TextSuccess { get; }
+        UIColor TextWarning { get; }
+        UIColor TextError { get; }
+        UIColor TextUnkonwn { get; }
     }
 }

@@ -31,7 +31,7 @@ namespace FRCDiagnostics.UI
                 }
                 if(c.Length == 6)
                 {
-                    c = [c[0], c[1], c[2], c[3], c[4], c[5], 'f', 'f'];
+                    c = ['f', 'f', .. c];
                 }
                 string fn = new StringBuilder().Append(c).ToString();
                 if(int.TryParse(fn, System.Globalization.NumberStyles.HexNumber, null, out int rgba))
@@ -45,6 +45,16 @@ namespace FRCDiagnostics.UI
             {
                 throw new InvalidCastException("Could not cast string '" + hex + "' to Color.");
             }
+        }
+
+        public static implicit operator SolidBrush(UIColor c)
+        {
+            return new SolidBrush(c.color);
+        }
+
+        public static implicit operator Pen(UIColor c)
+        {
+            return new Pen(c.color);
         }
 
         public static implicit operator UIColor(Color c)

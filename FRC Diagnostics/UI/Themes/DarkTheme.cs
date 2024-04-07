@@ -27,5 +27,10 @@ namespace FRCDiagnostics.UI.Themes
         public UIColor HeaderNormal => "#ffffff";
 
         public UIColor HeaderMuted => "#bebebe";
+
+        public UIColor TextSuccess => "#6fd990";
+        public UIColor TextWarning => "#e6e35a";
+        public UIColor TextError => "#ed3746";
+        public UIColor TextUnkonwn => "#9c9c9c";
     }
 }
